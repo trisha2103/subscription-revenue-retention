@@ -62,11 +62,12 @@ subscription-revenue-retention/
 
 ## 🎨 Dashboards  
 
-| 💧 Waterfall of MRR | 📈 MRR Trend | 🔥 Cohort Heatmap |
-|---------------------|--------------|------------------|
-| ![Waterfall](screenshots/Waterfall.png) | ![Trend](screenshots/MRR_Trend.png) | ![Cohort](screenshots/Cohort_Heatmap.png) |
+Here are the interactive dashboards built for retention analysis:  
 
-🔗 [✨ Explore on Tableau Public](https://public.tableau.com/) *(add your link here)*  
+| 💧 Waterfall of MRR | 📈 MRR Trend | 🔥 Cohort Heatmap |
+|---------------------|-------------|------------------|
+| <img src="screenshots/Waterfall.png" width="250"/> | <img src="screenshots/MRR Trend.png" width="250"/> | <img src="screenshots/Cohort Heatmap.png" width="250"/> |
+
 
 ---
 
