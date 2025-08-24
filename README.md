@@ -62,11 +62,6 @@ subscription-revenue-retention/
 
 ---
 
-## 🎨 Dashboards
-
-| 💧 Waterfall of MRR | 📈 MRR Trend | 🔥 Cohort Heatmap |
-|---|---|---|
-| ![Waterfall](screenshots/Waterfall.png) | ![MRR Trend](screenshots/MRR Trend.png) | ![Cohort Heatmap](screenshots/Cohort Heatmap.png) |
 
 ---
 
@@ -98,5 +93,4 @@ make copy-exports
 # 5) Open the Tableau workbook (macOS)
 open tableau/Subscription_Retention.twbx
 
-
-
+---
