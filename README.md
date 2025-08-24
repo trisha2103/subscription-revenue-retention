@@ -2,95 +2,61 @@
 
 <p align="center">
   <img src="https://www.python.org/static/community_logos/python-logo.png" width="80"/>
-  <img src="https://img.icons8.com/color/96/postgreesql.png" width="80"/>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" width="80"/>
   <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" width="80"/>
-  <img src="https://img.icons8.com/color/96/tableau-software.png" width="80"/>
+  <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" width="80"/>
 </p>
 
 <p align="center">
-  Python 🐍 + PostgreSQL 🐘 + Docker 🐳 + Tableau 📊
+  <b>Python 🐍 + PostgreSQL 🐘 + Docker 🐳 + Tableau 📊</b>
 </p>
 
+---
+
+## 🔴 The Problem  
+SaaS companies constantly fight **customer churn**.  
+- Losing **4% customers every month** adds up quickly 😬  
+- Executives often ask:  
+  > *“How much revenue are we losing? Can we measure retention? What happens if we reduce churn?”*  
 
 ---
 
-## 🚨 The Problem  
+## ✅ The Solution  
+This project builds a **full analytics pipeline**:  
 
-💡 Imagine you run a SaaS business:  
-- Customers sign up, pay monthly → then… vanish ❌  
-- 📉 Revenue drops, churn eats growth, and CFOs panic.  
-
-The **big question**:  
-👉 *How do we measure churn, cohorts, and retention to stop revenue leaks?*  
-
----
-
-## 💡 The Solution  
-
-I built a **full-stack analytics pipeline** that answers those exact questions:
-
-🔹 **Dockerized PostgreSQL** — portable database, no messy installs.  
-🔹 **SQL Cohort Analysis** — logo & revenue retention across time.  
-🔹 **Python (Jupyter)** — preprocessing, feature engineering, exports.  
-🔹 **Tableau Dashboards** — *executive-ready* visual storytelling.  
-
+1. **Python** → clean & transform raw subscription dataset  
+2. **PostgreSQL (Dockerized)** → store subscriptions, run SQL cohorts  
+3. **SQL Analytics** → churn, expansion, contraction, MRR retention  
+4. **Tableau Dashboards** → visual story for executives  
+5. **Business Impact** → quantify $$$ saved with churn reduction  
 
 ---
 
-## 🛠️ Tech Superpowers  
+## 🗂 Project Blueprint  
 
-| Tool | Why it Matters |
-|------|----------------|
-| 🐳 **Docker** | Portable, reproducible DB anywhere |
-| 🐘 **PostgreSQL** | Crunch cohorts, retention, churn logic |
-| 🐍 **Python** | Preprocessing, automation, churn modeling |
-| 📊 **Tableau** | Insights for executives, not just analysts |
-
----
-
-## 📂 Project Blueprint  
-
-```bash
 subscription-revenue-retention/
-│── data/             # raw dataset (Telco CSV)
-│── notebooks/        # Python notebooks (Jupyter)
-│── sql/postgres/     # SQL: schema, cohorts, retention, MRR
-│── exports/          # CSVs → Tableau
-│── tableau/          # Packaged workbook (.twbx) or public link
-│── screenshots/      # Dashboards 📸
-│── README.md         # 👋 you are here
-
----
+│── data/ # raw dataset (Telco CSV)
+│── notebooks/ # Python notebooks (Jupyter)
+│── sql/postgres/ # SQL: schema, cohorts, retention, MRR
+│── exports/ # CSVs → Tableau
+│── tableau/ # Packaged workbook (.twbx) or public link
+│── screenshots/ # Dashboard PNGs
+│── README.md # 👋 you are here
 
 
----
+## 🧠 What’s Inside the SQL
 
-## ⚡ Key Insights
-- Baseline churn ~ **4% monthly** (≈ **200** customers lost)
-- **10%** churn reduction saves ~ **20** customers/month
-- With **Avg MRR = $300** and ~ **6 months** retained → **≈ $36,000** revenue preserved
+01 **schema_load.sql** → creates saas_retention DB + subscriptions table and loads CSV
 
-> Retention isn’t optional—it’s a **growth multiplier**.
+02 **cohort_logo_retention.sql** → logo retention % by cohort_month × month_offset
 
----
+03 **cohort_revenue_retention.sql** → revenue retention % by cohort
 
-## 🐳 Reproduce (Docker + Makefile)
+04 **mrr_movements.sql** → monthly New / Expansion / Contraction / Churned MRR
 
-```bash
-# 1) Start Dockerized Postgres
-make db-start
+## 🌈 Why This Project Rocks
 
-# 2) Create DB, tables, and load CSV
-make load
-
-# 3) Run analytics (cohorts, revenue retention, MRR movements)
-make all
-
-# 4) Export CSVs for Tableau
-make exports
-make copy-exports
-
-# 5) Open the Tableau workbook (macOS)
-open tableau/Subscription_Retention.twbx
-
----
+✅ **Full-stack** → Data → DB → Analytics → Viz → Business Impact
+✅ **Dockerized** → runs anywhere, zero setup pain
+✅ **Visual** → dashboards tell a story execs understand
+✅ **Impact-driven** → showed how to save $36K+ with small churn wins
