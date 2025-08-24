@@ -1,11 +1,16 @@
 # 🌟 SaaS Subscription Revenue Retention Analysis  
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="60" /> &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="60" /> &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="60" /> &nbsp;
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" width="60" />  
+  <img src="https://www.python.org/static/community_logos/python-logo.png" width="80"/>
+  <img src="https://img.icons8.com/color/96/postgreesql.png" width="80"/>
+  <img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" width="80"/>
+  <img src="https://img.icons8.com/color/96/tableau-software.png" width="80"/>
 </p>
+
+<p align="center">
+  Python 🐍 + PostgreSQL 🐘 + Docker 🐳 + Tableau 📊
+</p>
+
 
 <p align="center">
   Python 🐍 + PostgreSQL 🐘 + Docker 🐳 + Tableau 📊
@@ -60,43 +65,43 @@ subscription-revenue-retention/
 │── screenshots/      # Dashboards 📸
 │── README.md         # 👋 you are here
 
-## 🎨 Dashboards  
+---
 
-Here are the interactive dashboards built for retention analysis:  
+## 🎨 Dashboards
 
 | 💧 Waterfall of MRR | 📈 MRR Trend | 🔥 Cohort Heatmap |
-|---------------------|-------------|------------------|
-| <img src="screenshots/Waterfall.png" width="250"/> | <img src="screenshots/MRR Trend.png" width="250"/> | <img src="screenshots/Cohort Heatmap.png" width="250"/> |
-
-
----
-
-## ⚡ Key Insights  
-
-- Baseline churn ~ **4% monthly** (≈200 customers lost 😬)  
-- Just **10% churn reduction** → saves **20 customers/month** 🎉  
-- Avg MRR = **$300** → with 6 months retained →  
-  **💰 $36,000 saved revenue**  
-
-👉 Retention isn’t optional — it’s a **growth multiplier** 🚀  
+|---|---|---|
+| ![Waterfall](screenshots/Waterfall.png) | ![MRR Trend](screenshots/MRR Trend.png) | ![Cohort Heatmap](screenshots/Cohort Heatmap.png) |
 
 ---
 
-## 🚀 How to Reproduce (Docker-Powered)  
+## ⚡ Key Insights
+- Baseline churn ~ **4% monthly** (≈ **200** customers lost)
+- **10%** churn reduction saves ~ **20** customers/month
+- With **Avg MRR = $300** and ~ **6 months** retained → **≈ $36,000** revenue preserved
+
+> Retention isn’t optional—it’s a **growth multiplier**.
+
+---
+
+## 🐳 Reproduce (Docker + Makefile)
 
 ```bash
-# 1. Start Dockerized Postgres
+# 1) Start Dockerized Postgres
 make db-start
 
-# 2. Load schema + CSV
+# 2) Create DB, tables, and load CSV
 make load
 
-# 3. Run all queries (cohorts, retention, MRR movements)
+# 3) Run analytics (cohorts, revenue retention, MRR movements)
 make all
 
-# 4. Export CSVs for Tableau
+# 4) Export CSVs for Tableau
 make exports
 make copy-exports
 
-# 5. Open Tableau workbook
+# 5) Open the Tableau workbook (macOS)
 open tableau/Subscription_Retention.twbx
+
+
+
