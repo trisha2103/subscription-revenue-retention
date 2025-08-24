@@ -12,11 +12,6 @@
 </p>
 
 
-<p align="center">
-  Python 🐍 + PostgreSQL 🐘 + Docker 🐳 + Tableau 📊
-</p>
-
-
 ---
 
 ## 🚨 The Problem  
