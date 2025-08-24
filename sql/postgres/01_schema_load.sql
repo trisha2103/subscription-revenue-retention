@@ -15,8 +15,7 @@ CREATE TABLE subscriptions (
     is_active     INT         NOT NULL    -- 1 if mrr>0 else 0
 );
 
--- If you copied the CSV into the container at /subscriptions.csv
--- adjust the path if different (e.g., /work/data/subscriptions.csv when bind-mounted)
+
 COPY subscriptions
 FROM '/subscriptions.csv'
 DELIMITER ','
