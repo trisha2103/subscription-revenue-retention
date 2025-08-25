@@ -44,19 +44,21 @@ subscription-revenue-retention/
 │── README.md # 👋 you are here
 
 
-## 🧠 What’s Inside the SQL
+---
 
-01 **schema_load.sql** → creates saas_retention DB + subscriptions table and loads CSV
+## 🧠 What’s Inside the SQL  
 
-02 **cohort_logo_retention.sql** → logo retention % by cohort_month × month_offset
+1. **01_schema_load.sql** → creates `saas_retention` DB + `subscriptions` table and loads CSV  
+2. **02_cohort_logo_retention.sql** → calculates logo retention % by `cohort_month × month_offset`  
+3. **03_cohort_revenue_retention.sql** → computes revenue retention % by cohort  
+4. **04_mrr_movements.sql** → tracks monthly **New / Expansion / Contraction / Churned MRR**  
 
-03 **cohort_revenue_retention.sql** → revenue retention % by cohort
+---
 
-04 **mrr_movements.sql** → monthly New / Expansion / Contraction / Churned MRR
+## 🌈 Why This Project Rocks  
 
-## 🌈 Why This Project Rocks
-
-✅ **Full-stack** → Data → DB → Analytics → Viz → Business Impact
-✅ **Dockerized** → runs anywhere, zero setup pain
-✅ **Visual** → dashboards tell a story execs understand
-✅ **Impact-driven** → showed how to save $36K+ with small churn wins
+- ✅ **Full-stack** → Data → DB → Analytics → Viz → Business Impact  
+- ✅ **Dockerized** → runs anywhere, zero setup pain  
+- ✅ **Automated** → Makefile = one-command pipeline  
+- ✅ **Visual** → dashboards tell a story execs instantly understand  
+- ✅ **Impact-driven** → showed how to save **$36K+** with small churn wins  
