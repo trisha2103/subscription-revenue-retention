@@ -34,21 +34,27 @@ This project builds a **full analytics pipeline**:
 
 ## 📂 Project Blueprint  
 
-subscription-revenue-retention/
-├── data/ # 📊 Raw dataset (Telco CSV)
-├── notebooks/ # 🐍 Python notebooks (Jupyter)
-├── sql/postgres/ # 🗄️ SQL scripts: schema, cohorts, retention, MRR
-├── exports/ # 📤 CSV exports for Tableau
-├── tableau/ # 📊 Packaged workbook (.twbx) / Tableau Public link
-├── screenshots/ # 🖼️ Dashboard snapshots (PNG)
-└── README.md # 📘 You are here
+subscription-revenue-retention/  
+├── 📊 data/           → Raw dataset (Telco CSV)  
+├── 🐍 notebooks/      → Python notebooks (Jupyter)  
+├── 🗄️ sql/postgres/   → SQL scripts: schema, cohorts, retention, MRR  
+├── 📤 exports/        → CSV exports for Tableau  
+├── 📊 tableau/        → Tableau packaged workbook (.twbx) / Public link  
+├── 🖼️ screenshots/   → Dashboard snapshots (PNG)  
+└── 📘 README.md       → You are here  
+
 
 ---
+
+
 ## 🎨 Dashboards  
 
 | 💧 Waterfall of MRR | 📈 MRR Trend | 🔥 Cohort Heatmap |
 |---------------------|-------------|-------------------|
 | ![Waterfall](screenshots/Waterfall.png) | ![Trend](screenshots/MRR%20Trend.png) | ![Cohort](screenshots/Cohort%20Heatmap.png) |
+
+
+---
 
 
 ## ⚡ Key Insights  
@@ -59,6 +65,8 @@ subscription-revenue-retention/
 
 👉 Retention isn’t optional — it’s a **growth multiplier 🚀**  
 
+---
+
 
 ## 🧠 What’s Inside the SQL  
 
@@ -67,7 +75,9 @@ subscription-revenue-retention/
 3. **03_cohort_revenue_retention.sql** → computes revenue retention % by cohort  
 4. **04_mrr_movements.sql** → tracks monthly **New / Expansion / Contraction / Churned MRR**  
 
+
 ---
+
 
 ## 🌈 Why This Project Rocks  
 
