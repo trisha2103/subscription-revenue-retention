@@ -45,6 +45,12 @@ subscription-revenue-retention/
 
 
 ---
+## 🎨 Dashboards  
+
+| 💧 Waterfall of MRR | 📈 MRR Trend | 🔥 Cohort Heatmap |
+|---------------------|-------------|-------------------|
+| ![Waterfall](screenshots/Waterfall.png) | ![Trend](screenshots/MRR%20Trend.png) | ![Cohort](screenshots/Cohort%20Heatmap.png) |
+
 
 ## 🧠 What’s Inside the SQL  
 
