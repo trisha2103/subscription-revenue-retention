@@ -32,17 +32,16 @@ This project builds a **full analytics pipeline**:
 
 ---
 
-## 🗂 Project Blueprint  
+## 📂 Project Blueprint  
 
 subscription-revenue-retention/
-│── data/ # raw dataset (Telco CSV)
-│── notebooks/ # Python notebooks (Jupyter)
-│── sql/postgres/ # SQL: schema, cohorts, retention, MRR
-│── exports/ # CSVs → Tableau
-│── tableau/ # Packaged workbook (.twbx) or public link
-│── screenshots/ # Dashboard PNGs
-│── README.md # 👋 you are here
-
+├── data/ # 📊 Raw dataset (Telco CSV)
+├── notebooks/ # 🐍 Python notebooks (Jupyter)
+├── sql/postgres/ # 🗄️ SQL scripts: schema, cohorts, retention, MRR
+├── exports/ # 📤 CSV exports for Tableau
+├── tableau/ # 📊 Packaged workbook (.twbx) / Tableau Public link
+├── screenshots/ # 🖼️ Dashboard snapshots (PNG)
+└── README.md # 📘 You are here
 
 ---
 ## 🎨 Dashboards  
@@ -50,6 +49,15 @@ subscription-revenue-retention/
 | 💧 Waterfall of MRR | 📈 MRR Trend | 🔥 Cohort Heatmap |
 |---------------------|-------------|-------------------|
 | ![Waterfall](screenshots/Waterfall.png) | ![Trend](screenshots/MRR%20Trend.png) | ![Cohort](screenshots/Cohort%20Heatmap.png) |
+
+
+## ⚡ Key Insights  
+
+- Baseline churn = **~4% monthly** → ≈200 customers lost 😬  
+- Cutting churn by **10%** = **20 customers saved/month** 🎉  
+- Avg MRR = **$300** → 6 months retained → **💰 $36,000 saved**  
+
+👉 Retention isn’t optional — it’s a **growth multiplier 🚀**  
 
 
 ## 🧠 What’s Inside the SQL  
